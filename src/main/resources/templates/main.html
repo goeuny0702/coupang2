@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/src/main/resources/static/css/main.css">
+    <script defer src="/src/main/resources/static/js/main.js"></script>
+    <script defer src="/src/main/resources/static/js/header.js"></script>
+</head>
+<body>
+    <!-- header를 로드할 부분 -->
+    <div id="header"></div>
+
+    <script>
+        fetch('layouts/header.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('header').innerHTML = data;
+            });
+    </script>
+
+    <section>
+        <!-- 메인 슬라이드 이미지 -->
+        <div class="wrap">
+            <div class="slide-container">
+                <img src="/src/main/resources/static/images/slide1.jpg" class="slides fade" alt="img1">
+                <img src="/src/main/resources/static/images/slide2.jpg" class="slides fade" alt="img2">
+                <img src="/src/main/resources/static/images/slide3.jpg" class="slides fade" alt="img3">
+                <img src="/src/main/resources/static/images/slide4.jpg" class="slides fade" alt="img4">
+            </div>
+
+
+            <!-- 오늘의 발견 -->
+            <div class="discovery">
+                <div class="discovery-text">
+                    <h2>오늘의 발견</h2>
+                    <p>|  오늘 쿠팡이 엄선한 가장 HOT한 상품</p>
+                </div>
+                
+                <div class="discovery-list">
+                    <div class="discovery-item">
+                        <img src="/src/main/resources/static/images/dicovery1.jpg" alt="img1">
+                        <button type="button" class="btn btn-primary">바로가기</button>
+                    </div>
+                    <div class="discovery-item">
+                        <img src="/src/main/resources/static/images/dicovery2.jpg" alt="img2">
+                        <button type="button" class="btn btn-primary">바로가기</button>
+                    </div>
+                    <div class="discovery-item">
+                        <img src="/src/main/resources/static/images/dicovery3.jpg" alt="img3">
+                        <button type="button" class="btn btn-primary">바로가기</button>
+                    </div>
+                    <div class="discovery-item">
+                        <img src="/src/main/resources/static/images/dicovery4.jpg" alt="img4">
+                        <button type="button" class="btn btn-primary">바로가기</button>
+                    </div>
+                    <div class="discovery-item">
+                        <img src="/src/main/resources/static/images/dicovery5.jpg" alt="img5">
+                        <button type="button" class="btn btn-primary">바로가기</button>
+                    </div>
+                    <div class="discovery-item">
+                        <img src="/src/main/resources/static/images/dicovery6.jpg" alt="img6">
+                        <button type="button" class="btn btn-primary">바로가기</button>
+                    </div>
+                    <div class="discovery-item">
+                        <img src="/src/main/resources/static/images/dicovery7.jpg" alt="img7">
+                        <button type="button" class="btn btn-primary">바로가기</button>
+                    </div>
+                    <div class="discovery-item">
+                        <img src="/src/main/resources/static/images/dicovery8.jpg" alt="img8">
+                        <button type="button" class="btn btn-primary">바로가기</button>
+                    </div>
+                    <div class="discovery-item">
+                        <img src="/src/main/resources/static/images/dicovery9.jpg" alt="img9">
+                        <button type="button" class="btn btn-primary">바로가기</button>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- 오늘의 쇼핑 제안 -->
+            <div class="today-shopping">
+                <div class="shopping-text">
+                    <img src="/src/main/resources/static/images/icon-shopping-bag@3x.png" alt="img">
+                    <h2>오늘의 쇼핑 제안</h2>
+                </div>
+
+                <div class="carousel-container2">
+                    <div class="arrow">
+                        <img src="/src/main/resources/static/images/arrow.png" alt="left">
+                    </div>
+                    <div class="shopping-item">
+                        <ul>
+                            <li>
+                                <a href="#">
+                                    <img src="/src/main/resources/static/images/item1.jpg" class="item-img" alt="1">
+                                    하리보젤리 크리스마스 트리
+                                    <img src="/src/main/resources/static/images/logoRocket.png" class="locket-logo" alt="">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img src="/src/main/resources/static/images/item2.jpg" class="item-img" alt="2">
+                                    하리보 프리마베라 젤리 80g 3개
+                                    <img src="/src/main/resources/static/images/logoRocket.png" class="locket-logo" alt="">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img src="/src/main/resources/static/images/item3.jpg" class="item-img" alt="3">
+                                    하리보젤리 미니 레인보우 프로그
+                                    <img src="/src/main/resources/static/images/logoRocket.png" class="locket-logo" alt="">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img src="/src/main/resources/static/images/item4.jpg" class="item-img" alt="4">
+                                    하리보젤리 카멜리온 160g 3개
+                                    <img src="/src/main/resources/static/images/logoRocket.png" class="locket-logo" alt="">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img src="/src/main/resources/static/images/item5.png" class="item-img" alt="5">
+                                    하리보 베렌트라움 젤리 160g 3개
+                                    <img src="/src/main/resources/static/images/logoRocket.png" class="locket-logo" alt="">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img src="/src/main/resources/static/images/item6.jpg" class="item-img" alt="6">
+                                    하리보젤리 그레이프푸르츠 100g
+                                    <img src="/src/main/resources/static/images/logoRocket.png" class="locket-logo" alt="">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img src="/src/main/resources/static/images/item7.jpg" class="item-img" alt="7">
+                                    삼진 초코마시멜로 210g 2개
+                                    <img src="/src/main/resources/static/images/logoRocket.png" class="locket-logo" alt="">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img src="/src/main/resources/static/images/item8.jpg" class="item-img" alt="8">
+                                    하리보젤리 초코마시멜로 160g
+                                    <img src="/src/main/resources/static/images/logoRocket.png" class="locket-logo" alt="">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img src="/src/main/resources/static/images/item9.jpg" class="item-img" alt="9">
+                                    하리보젤리 펑키백 175g 1개
+                                    <img src="/src/main/resources/static/images/logoRocket.png" class="locket-logo" alt="">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img src="/src/main/resources/static/images/item10.jpg" class="item-img" alt="10">
+                                    하리보젤리 프루츠마니아 175g
+                                    <img src="/src/main/resources/static/images/logoRocket.png" class="locket-logo" alt="">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img src="/src/main/resources/static/images/item11.png" class="item-img" alt="11">
+                                    캇예스 베리버니 175g 1개
+                                    <img src="/src/main/resources/static/images/logoRocket.png" class="locket-logo" alt="">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img src="/src/main/resources/static/images/item12.jpg" class="item-img" alt="12">
+                                    하리보젤리 스위트 마우스 175g
+                                    <img src="/src/main/resources/static/images/logoRocket.png" class="locket-logo" alt="">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img src="/src/main/resources/static/images/item13.jpg" class="item-img" alt="13">
+                                    하리보젤리 스머프 175g 1개
+                                    <img src="/src/main/resources/static/images/logoRocket.png" class="locket-logo" alt="">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img src="/src/main/resources/static/images/item14.jpg" class="item-img" alt="14">
+                                    하리보젤리 요거티스 160g 1개
+                                    <img src="/src/main/resources/static/images/logoRocket.png" class="locket-logo" alt="">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img src="/src/main/resources/static/images/item15.jpg" class="item-img" alt="15">
+                                    하리보젤리 샤말로우 루비노 70g
+                                    <img src="/src/main/resources/static/images/logoRocket.png" class="locket-logo" alt="">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#"><img src="/src/main/resources/static/images/item16.jpg" class="item-img" alt="16">
+                                    하리보젤리 체리 콜라 175g 1개
+                                    <img src="/src/main/resources/static/images/logoRocket.png" class="locket-logo" alt="">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img src="/src/main/resources/static/images/item17.jpg" class="item-img" alt="17">
+                                    하리보젤리 초코 마시멜로 160g
+                                    <img src="/src/main/resources/static/images/logoRocket.png" class="locket-logo" alt="">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img src="/src/main/resources/static/images/item18.jpg" class="item-img" alt="18">
+                                    하리보젤리 고스트 160g 1개
+                                    <img src="/src/main/resources/static/images/logoRocket.png" class="locket-logo" alt="">
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="arrow">
+                        <img src="/src/main/resources/static/images/arrow2.png" alt="right">
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- 자주 산 상품 -->
+            <div class="today-shopping2">
+                <h2>자주 산 상품</h2>
+                <div class="carousel-container3">
+                    <div class="arrow" onclick="scrollToLeft()">
+                        <img src="/src/main/resources/static/images/arrow.png" alt="left">
+                    </div>
+
+                    <div class="shopping-item">
+                        <ul>
+                            <li>
+                                <a href="#">
+                                    <img src="/src/main/resources/static/images/item20.jpg" class="item-img" alt="">
+                                    <p>해피홈 알콜 스왑 100개입 1개</p>
+                                    <div class="item-text">
+                                        <em>4,230원</em>
+                                        <img src="/src/main/resources/static/images/logoRocket.png" class="locket-logo" alt="">
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img src="/src/main/resources/static/images/item21.png" class="item-img" alt="">
+                                    <p>스튜디오17 팡팡 대왕 퍼프 2개</p>
+                                    <div class="item-text">
+                                        <em>7,800원</em>
+                                        <img src="/src/main/resources/static/images/logoRocket.png" class="locket-logo" alt="">
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img src="/src/main/resources/static/images/item22.jpg" class="item-img" alt="">
+                                    <p>시드물 닥터트럽 스킨 리터닝 클렌징 밀크 1개</p>
+                                    <div class="item-text">
+                                        <em>13,600원</em>
+                                        <img src="/src/main/resources/static/images/logoRocket.png" class="locket-logo" alt="">
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img src="/src/main/resources/static/images/item23.jpg" class="item-img" alt="">
+                                    <p>에스트라 테라크네365 클리어 딥 클렌징 폼 1개</p>
+                                    <div class="item-text">
+                                        <em>16,190원</em>
+                                        <img src="/src/main/resources/static/images/logoRocket.png" class="locket-logo" alt="">
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img src="/src/main/resources/static/images/item24.jpg" class="item-img" alt="">
+                                    <p>바디선생 수면밴드 36매 입벌림 방지 테이프 밴드 2개</p>
+                                    <div class="item-text">
+                                        <em>9,930원</em>
+                                        <img src="/src/main/resources/static/images/logoRocket.png" class="locket-logo" alt="">
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img src="/src/main/resources/static/images/item25.jpg" class="item-img" alt="">
+                                    <p>헬로바이오 프리미엄 칼륨 포타슘 120g 1개</p>
+                                    <div class="item-text">
+                                        <em>10,900원</em>
+                                        <img src="/src/main/resources/static/images/logoRocket.png" class="locket-logo" alt="">
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img src="/src/main/resources/static/images/item26.jpg" class="item-img" alt="">
+                                    <p>황금이네 늙은 호박즙 1개</p>
+                                    <div class="item-text">
+                                        <em>18,900원</em>
+                                        <img src="/src/main/resources/static/images/logoRocket.png" class="locket-logo" alt="">
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img src="/src/main/resources/static/images/item27.jpg" class="item-img" alt="">
+                                    <p>뉴트리디데이 프리미엄 칼슘 마그네슘 90정 1개</p>
+                                    <div class="item-text">
+                                        <em>9,900원</em>
+                                        <img src="/src/main/resources/static/images/logoRocket.png" class="locket-logo" alt="">
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img src="/src/main/resources/static/images/item28.jpg" class="item-img" alt="">
+                                    <p>헤라 실키 스테이 24아워 롱웨어 파운데이션 17C1 1개</p>
+                                    <div class="item-text">
+                                        <em>63,000원</em>
+                                        <img src="/src/main/resources/static/images/logoRocket.png" class="locket-logo" alt="">
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img src="/src/main/resources/static/images/item29.jpg" class="item-img" alt="">
+                                    <p>일리윤 세라마이드 아토 6.0 탑투토워시 1개</p>
+                                    <div class="item-text">
+                                        <em>13,990원</em>
+                                        <img src="/src/main/resources/static/images/logoRocket.png" class="locket-logo" alt="">
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img src="/src/main/resources/static/images/item30.jpg" class="item-img" alt="">
+                                    <p>종근당건강 프로메가 오메가3 트리플 장용성 1개</p>
+                                    <div class="item-text">
+                                        <em>10,840원</em>
+                                        <img src="/src/main/resources/static/images/logoRocket.png" class="locket-logo" alt="">
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img src="/src/main/resources/static/images/item31.png" class="item-img" alt="">
+                                    <p>벨르아망 에어도넛 차량용 방향제 리필 2개</p>
+                                    <div class="item-text">
+                                        <em>12,000원</em>
+                                        <img src="/src/main/resources/static/images/logoRocket.png" class="locket-logo" alt="">
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img src="/src/main/resources/static/images/item32.jpg" class="item-img" alt="">
+                                    <p>퀸즈트리 피넛버터 크런치 1개</p>
+                                    <div class="item-text">
+                                        <em>9,500원</em>
+                                        <img src="/src/main/resources/static/images/logoRocket.png" class="locket-logo" alt="">
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="arrow" onclick="scrollToRight()">
+                        <img src="/src/main/resources/static/images/arrow2.png" alt="right">
+                    </div>
+                </div>
+            </div>
+            
+
+        </div>
+    </section>
+
+    <!-- footer를 로드할 부분 -->
+    <div id="footer"></div>
+
+    <script>
+        fetch('layouts/footer.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('footer').innerHTML = data;
+            });
+    </script>
+
+    
+</body>
+</html>

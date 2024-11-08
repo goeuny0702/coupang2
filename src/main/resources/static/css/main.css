@@ -1,0 +1,334 @@
+body {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    /* align-items: center; */
+}
+
+section {
+    margin-top: 5px;
+}
+
+.wrap {
+
+}
+
+/* 메인 이미지 슬라이더 부분 */
+.slide-container {
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+
+}
+
+.slides {
+    display: none;
+    width: 100%;
+    height: 450px;
+}
+
+/* 이미지에 부드러운 전환 효과 */
+.fade {
+    animation: fade 3s ease-in-out;
+}
+
+@keyframes fade {
+    from { opacity: 1; }
+    to { opacity: 1; }
+}
+
+/* 오늘의 발견 파트 */
+.discovery {
+    margin: 50px 260px;
+    width: 1000px;
+    /* padding: 3px 0 13px 4px;
+    background: #fff;
+    border: 1px solid #d6d6d6; */
+
+}
+
+.discovery-text {
+    align-items: center;
+    display: flex;
+}
+
+
+.discovery-text h2 {
+    margin-right: 10px;
+    color: #454545;
+    font-size: 25px;
+
+}
+
+.discovery-text p {
+    font-size: 15px;
+}
+
+.discovery-list {
+    display: flex;
+    flex-wrap: wrap; /* 아이템이 많을 경우 다음 줄로 넘어가도록 */
+    justify-content: center; /* 아이템 간의 간격 조정 */
+    width: 100%; /* 필요에 따라 조정 */
+    padding: 15px;
+    background: #fff;
+    border: 1px solid #d6d6d6;
+}
+
+.discovery-list .discovery-item {
+    display: inline-block;
+    position: relative;
+    overflow: hidden;
+    margin: 5px;
+}
+
+.discovery-list .discovery-item img {
+    display: block;
+    height: auto;
+    border: 1px solid #d6d6d6;
+}
+
+.discovery-list .discovery-item button {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding: 10px 20px;
+    cursor: pointer;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    background-color: #4285f4;
+    color: white;
+    border-radius: 2px;
+    border: none;
+}
+
+.discovery-list .discovery-item:hover img {
+    border: 1px solid #4285f4;
+}
+
+.discovery-item:hover button {
+    opacity: 1; /* 마우스를 올렸을 때 버튼이 나타남 */
+}
+
+.today-shopping {
+    border-bottom: 1px solid #ddd;
+    position: relative;
+    margin: 20px 200px 20px 220px; /* 가로 방향으로 중앙 정렬 */
+    width: 1100px;
+    padding: 50px 20px; 
+    /* box-sizing: border-box; */
+    
+
+}
+
+.today-shopping .shopping-text {
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+
+}
+
+.today-shopping .shopping-text img {
+    width: 70px;
+    height: 70px;
+    margin-right: 15px;
+    
+}
+
+.today-shopping .shopping-text h2 {
+    font-size: 24px;
+    font-weight: 600;
+    color: #111;
+    
+}
+
+.carousel-container2 {
+    display: flex;
+    align-items: center;
+}
+
+.carousel-container2 .arrow {
+    margin-right: 25px;
+    margin-left: 25px;
+    cursor: pointer;
+
+}
+
+.carousel-container2 .arrow img {
+    width: 50px;
+    height: 50px;
+
+}
+
+
+.carousel-container2 .shopping-item {
+    display: flex;
+    /* align-items: center; */
+    /* flex-wrap: wrap; */
+    gap: 10px;
+
+    flex-wrap: nowrap;
+    overflow-x: hidden; /*가로 스크롤 숨기기*/
+    padding: 10px;
+    max-width: 100%;
+
+
+}
+
+.carousel-container2 .shopping-item ul {
+    /* display: flex;  */
+    padding: 0;
+    list-style: none; 
+    /* width: 100%; */
+
+    display: inline-flex;
+    width: max-content;
+    margin: 0px;
+    
+}
+
+.carousel-container2 .shopping-item ul li {
+    margin: 0 10px; /* 이미지 간격 조정 */
+
+    display: inline-block;
+    
+}
+
+.carousel-container2 .shopping-item ul li a {
+    display: flex;
+    /* align-items: center; */
+    flex-direction: column;
+    /* text-align: center; */
+    text-decoration: none;
+    font-size: 14px;
+    color: #111;
+    
+}
+
+.carousel-container2 .shopping-item ul li:hover a {
+    color: #4285f4;
+
+}
+
+.carousel-container2 .shopping-item ul li a .item-img {
+    margin-bottom: 5px;
+    width: 194px;
+    height: 194px;
+    display: block;
+    
+}
+
+.carousel-container2 .shopping-item ul li a .locket-logo {
+    margin-top: 5px;
+    width: 84.15px;
+    height: 17px;
+}
+
+.today-shopping2 {
+    border-bottom: 1px solid #ddd;
+    position: relative;
+    margin: 20px 200px 20px 220px; /* 가로 방향으로 중앙 정렬 */
+    width: 1100px;
+    padding: 50px 20px;
+
+}
+
+.today-shopping2 h2 {
+    font-size: 24px;
+    font-weight: 600;
+    color: #111;
+
+}
+
+.carousel-container3 {
+    display: flex;
+    align-items: center;
+
+}
+
+.carousel-container3 .arrow {
+    margin-right: 25px;
+    margin-left: 25px;
+    cursor: pointer;
+}
+
+.carousel-container3 .arrow img {
+    width: 50px;
+    height: 50px;
+    
+}
+
+.carousel-container3 .shopping-item {
+    flex-wrap: nowrap;
+    overflow-x: hidden; /*가로 스크롤 숨기기*/
+    padding: 10px;
+    max-width: 100%;
+
+}
+
+.carousel-container3 .shopping-item ul {
+    display: flex;
+    align-items: center;
+    
+}
+
+.carousel-container3 .shopping-item ul li {
+    list-style: none;
+    margin: 10px;
+
+}
+
+.carousel-container3 .shopping-item ul li a {
+    display: flex;
+    /* align-items: center; */
+    flex-direction: column;
+    /* text-align: center; */
+    text-decoration: none;
+    /* font-size: 14px;
+    color: #111; */
+
+}
+
+.carousel-container3 .shopping-item ul li a img {
+    width: 194px;
+    height: 194px;
+    display: block;
+    margin-bottom: 5px;
+
+}
+
+.carousel-container3 .shopping-item ul li a p {
+    font-size: 14px;
+    color: #111;
+    margin-bottom: 5px;
+    /* text-decoration: none; */
+
+}
+
+.carousel-container3 .shopping-item ul li a:hover p {
+    color: #4285f4;
+
+}
+
+.carousel-container3 .shopping-item ul li a .item-text {
+    display: ruby;
+    align-items: center;
+
+}
+
+.carousel-container3 .shopping-item ul li a .item-text em {
+    font-family: Tahoma;
+    font-weight: 700;
+    font-size: 15px;
+    color: #ae0000;
+    font-style: normal;
+    
+}
+
+.carousel-container3 .shopping-item ul li a .item-text img {
+    width: 84.15px;
+    height: 17px;
+    vertical-align: middle;
+    
+}
