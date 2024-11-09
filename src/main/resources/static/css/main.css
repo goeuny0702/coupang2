@@ -137,7 +137,7 @@ section {
 }
 
 .today-shopping .shopping-text h2 {
-    font-size: 24px;
+    font-size: 25px;
     font-weight: 600;
     color: #111;
     
@@ -235,7 +235,7 @@ section {
 }
 
 .today-shopping2 h2 {
-    font-size: 24px;
+    font-size: 25px;
     font-weight: 600;
     color: #111;
 
@@ -330,5 +330,147 @@ section {
     width: 84.15px;
     height: 17px;
     vertical-align: middle;
+    
+}
+
+.category-best-item {
+    margin: 100px 200px 100px 220px;
+    width: 1140px;
+    height: 600px;
+    
+}
+
+.best-item-text {
+    font-weight: bold;
+    margin-bottom: 20px;
+
+}
+
+.best-item-text .text-a {
+    /* font-weight: bold; */
+    margin: 5px 0px;
+    font-size: 20px;
+    
+}
+
+.best-item-text .text-b {
+    font-size: 25px;
+    color: #333;
+    
+}
+
+.best-item-text .text-c {
+    font-size: 25px;
+    color: #0066ff;
+    
+}
+
+.best-item {
+    display: flex;
+    border-top: 2px solid orange;
+    border-bottom: 1px solid #ddd;
+
+}
+
+.best-item-a {
+    flex-direction: column;
+    display: flex;
+    justify-content: space-between;
+    width: 200px;
+
+}
+
+.best-item-a .title {
+    margin: 20px;
+    flex-direction: column;
+    display: flex;
+
+}
+
+.best-item-a .title img {
+    width: 115px;
+    height: 28px;
+    margin-bottom: 10px;
+    
+}
+
+.best-item-a .title a {
+    font-size: 14px;
+    text-decoration: none;
+    color: #333;
+    
+}
+
+.best-item-a .title:hover a {
+    color: #4285f4;
+}
+
+.best-item-a .hot-keyword {
+    display: grid;
+    margin: 20px;
+
+}
+
+.best-item-a .hot-keyword strong {
+    margin-bottom: 5px;
+    font-size: 18px;
+    font-weight: bold;
+    
+}
+
+.best-item-a .hot-keyword a {
+    width: 100px;
+    border: 2px solid #ddd;
+    text-decoration: none;
+    color: orange;
+    text-align: center;
+    margin: 2px 0px;
+    
+}
+
+.best-item-b {
+    position: relative;
+    width: 325px;
+    padding: 3px 0px;
+    align-items: center;
+    display: flex;
+
+}
+
+.best-item-b .slide {
+    position: relative;
+    display: inline-block;
+
+}
+
+.category-best-img {
+    width: 100%;
+    display: block;
+}
+
+.best-item-b .slide .slide-text {
+    position: absolute;
+    bottom: 30px; 
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(255, 140, 0, 0.9); 
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    width: 70%;
+
+    
+}
+
+.best-item-b .slide .slide-text strong {
+    font-size: 15px;
+    display: block;
+    font-weight: bold;
+    
+}
+
+.best-item-b .slide .slide-text p {
+    font-size: 12px;
+    margin-top: 5px;
     
 }
