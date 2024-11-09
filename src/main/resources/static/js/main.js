@@ -1,9 +1,9 @@
-// 메인 슬라이드
-let slideIndex = 0;
-
-    function showSlides() {
-        let slides = document.getElementsByClassName("slides");
-        
+// 슬라이드 쇼를 시작하는 함수
+function showSlides(className) {
+    let slideIndex = 0;
+    const slides = document.getElementsByClassName(className);
+    
+    function displaySlides() {
         // 모든 슬라이드를 비활성화
         for (let i = 0; i < slides.length; i++) {
             slides[i].style.display = "none";
@@ -15,13 +15,21 @@ let slideIndex = 0;
         
         slides[slideIndex - 1].style.display = "block";
         
-        // 1초 후에 showSlides 함수를 다시 호출
-        setTimeout(showSlides, 1000);
+        // 1초 후에 displaySlides 함수를 다시 호출
+        setTimeout(displaySlides, 1000);
     }
-
-    // 슬라이드 쇼 시작
-    showSlides();
     
+    displaySlides();
+}
+
+// 슬라이드 쇼 시작
+showSlides("slide-container-img");  // 첫 번째 슬라이드 그룹
+showSlides("category-best-img");    // 두 번째 슬라이드 그룹
+
+
+
+
+
 
     document.addEventListener("DOMContentLoaded", function() {
         // 왼쪽으로 스크롤
